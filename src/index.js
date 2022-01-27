@@ -12,7 +12,7 @@ app.use(morgan('combined'))
 app.use(express.json())
 app.engine('.hbs', handlebars.engine({ extname: '.hbs', defaultLayout: "main"}));
 app.set('view engine', 'hbs')
-app.set('views', path.join(         __dirname,'resource/views'))
+app.set('views', path.join(__dirname,    'resource/views'))
 
 
 route(app)
