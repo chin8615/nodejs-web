@@ -20,6 +20,11 @@
   "lint-staged": {
     "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "homepage": "https://github.com/chin8615/nodejs-web#readme",
   "dependencies": {
     "express": "^4.17.2",
